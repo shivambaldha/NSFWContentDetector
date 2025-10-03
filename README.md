@@ -65,7 +65,7 @@ Once configured, you will get an API endpoint that allows communication between 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/NSFWContentDetector.git
+git clone https://github.com/shivambaldha/NSFWContentDetector.git
 cd NSFWContentDetector
 ```
 
