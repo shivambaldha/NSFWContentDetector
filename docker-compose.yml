@@ -1,0 +1,15 @@
+version: "3"
+services:
+  nsfw-detector-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nsfw-detector-api
+    command: python app.py
+    volumes:
+      - ./uploads:/app/uploads  # Persist uploaded files
+    env_file:
+      - .env
+    ports:
+      - "${BACKEND_PORT:-8080}:8080"
+    restart: always
